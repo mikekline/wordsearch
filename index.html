@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Word Search</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="icon" href="images/madhat2.ico" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+</head>
+
+<body>
+	<header>
+		Word Search
+	</header>
+
+	<main>
+		<form>
+			<textarea id="textArea" placeholder="Cut and paste the full text to be searched here..."></textarea>
+			<p id="display"></p>
+			<input type="text" id="find" name="find" placeholder="Enter a word to be found..." maxlength="25">
+			<button id="findButton" class="button" type="button" onclick="new findReplaceWord().findAndDisplayResults();">Find All</button><br />
+			<input type="text" id="replaceText" name="replaceText" placeholder="Replace found word with..." maxlength="25">
+			<button id="relplaceButton" class="button" type="button" onclick=" new findReplaceWord().replaceWord()">Replace All</button>
+		</form>
+	</main>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/javascript.js"></script>
+</body>
+
+</html>

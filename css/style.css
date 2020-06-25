@@ -1,0 +1,152 @@
+body, html, * {
+  height: 100%;
+  margin: 0px 0px;
+
+}
+
+body {
+  background-image: url("../images/IMG_1424.JPG");
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  left: 30%;
+  right: 30%;
+  margin: 18px auto;
+  padding: 10px;
+  height: 20px;
+  width: 30%;
+  background-color: #2e2e1f;
+  border: 3px ridge #b35900;
+  text-align: center;
+  color: white;
+}
+
+main {
+  position: fixed;
+  left: 10%;
+  right: 10%;
+  margin: 85px auto;
+  height: 65%;
+  width: 60%;
+  background-color: rgba(46, 46, 31, 0.4);
+  border: 5px ridge #b35900;
+  box-shadow: inset 2px 2px 32px 10px black;
+  overflow: hidden;
+  filter: drop-shadow(180px 180px 120px rgba(112, 219, 219, 0.3));
+}
+
+form, #textArea {
+  display: block;
+  margin: 6% auto;
+  margin-bottom: 4%;
+  height: 100%;
+}
+
+#textArea {
+  outline: 0;
+  padding: 16px;
+  width: 78%;
+  height: 47%;
+  resize: none;
+  border: 2px ridge #b35900;
+  box-shadow: 2px 2px 32px 10px black;
+  background-color: rgba(228, 228, 228, 0.5);
+  font-size: 150%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #505050;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-input-placeholder {
+  font-size: 150%;
+}
+
+::-moz-placeholder {
+  font-size: 150%;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #404040;
+}
+
+#find, #replaceText {
+  margin-top: 0px;
+  margin-left: 12%;
+  height: 25px;
+  margin-bottom: 10px;
+  width: 25%;
+  text-indent: 5px;
+  outline: 0;
+  border: 4px ridge #b35900;
+  box-shadow: 1px 1px 12px -6px rgba(51, 204, 204, 1);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+#find::-webkit-input-placeholder, #replaceText::-webkit-input-placeholder {
+  font-size: 100%;
+}
+
+#find::-moz-placeholder, #replaceText::-moz-placeholder {
+  font-size: 100%;
+}
+
+#find:focus, #replaceText:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.button {
+  position: absolute;
+  margin: 4px 25px;
+  margin-bottom: 0px;
+  height: 30px;
+  width: 100px;
+  padding-bottom: 6px;
+  border-radius: 12px;
+  outline: 0;
+  border: 1px ridge #FFD700;
+  background-image: url("../images/wood.jpg");
+  background-color: rgba(193, 154, 107, 0.7);
+  box-shadow: inset -3px -4px 4px 2px black;
+  filter: drop-shadow(2px 2px 4px rgba(51, 204, 204, 0.7));
+}
+
+.button:active, .buttonToggle {
+  box-shadow: inset 6px 6px 4px 2px black;
+  padding: 10px;
+}
+
+#display {
+  position: absolute;
+  margin: 12px 0px;
+  margin-left: 58%;
+  height: 18px;
+  color: red;
+  background-color: rgba(245, 245, 245, 0.9);
+  border-radius: 5px;
+}
+
+.howMany {
+  padding: 4px 12px;
+  border: 2px ridge #FFD700;
+}
+
+@media screen and (max-width: 1218px) {
+  #display {
+    margin: 160px 0px;
+    margin-left: 4%;
+  }
+}
