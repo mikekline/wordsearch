@@ -5,6 +5,8 @@
 	description: Input a word to find all, then input another word to replace all
 	*/
 
+
+
 function findReplaceWord() {
   let textBox = document.getElementById('textArea').value;
   let textFind = document.getElementById('find').value;
@@ -12,6 +14,8 @@ function findReplaceWord() {
   let count = textBox.match(toConvert);
   let howMany = document.getElementById('display');
 
+	
+	
   //method to find and display the results of the word to be found
   this.findAndDisplayResults = () => {
     if(count == null){let setCountLengthToZero = function () {count = []}; setCountLengthToZero();}
@@ -24,6 +28,8 @@ function findReplaceWord() {
       }
     }
 
+  
+  
   //method to replace the found word(s)
   this.replaceWord = () => {
     if (textFind != "") {
@@ -33,6 +39,7 @@ function findReplaceWord() {
     }
   };
 }
+
 
 
 //to press the find all/replace all buttons down with the enter key instead of clicking
